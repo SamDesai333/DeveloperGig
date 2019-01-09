@@ -1,0 +1,19 @@
+{
+  "name": "developergig",
+  "version": "1.0.0",
+  "description": "Simple job finder app for developers",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamDesai333/DeveloperGig.git"
+  },
+  "author": "Samidh Desai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SamDesai333/DeveloperGig/issues"
+  },
+  "homepage": "https://github.com/SamDesai333/DeveloperGig#readme"
+}
