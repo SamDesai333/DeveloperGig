@@ -4,7 +4,8 @@
   "description": "Simple job finder app for developers",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,17 @@
   "bugs": {
     "url": "https://github.com/SamDesai333/DeveloperGig/issues"
   },
-  "homepage": "https://github.com/SamDesai333/DeveloperGig#readme"
+  "homepage": "https://github.com/SamDesai333/DeveloperGig#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "npm": "^6.5.0",
+    "pg": "^7.7.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.42.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
 }
