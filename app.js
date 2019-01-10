@@ -16,10 +16,14 @@ db.authenticate()
 
 const app = express();
 
+//HandleBars
+app.engine('handlebars', exphbs({ defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
+
 app.get('/', (req, res) => res.send('INDEX'));
 
 //Gig Routes
-app.use('/gigs', require('./routes/gigs'))
+app.use('/gigs', require('./routes/gigs'));
     
 const PORT = process.env.PORT || 5000;
 
