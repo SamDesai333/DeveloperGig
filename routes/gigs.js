@@ -8,14 +8,17 @@ const Gig  =  require('../models/Gig');
 router.get('/', (req, res) => 
     Gig.findAll()
     .then(gigs => {
-        console.log(gigs)
-        res.sendStatus(200);
+        res.render('gigs',{
+            gigs
+        });
     })
     .catch(err => console.log( err ))
 );
 
+//Display add gig form
+router.get('/add',(req, res) => res.render('add'));
 //Add a gig
- router.get('/add', (req, res) => {
+ router.post('/add', (req, res) => {
     const data = {
          title: 'Simple WordPress Website',
          technologies: 'wordpress',

@@ -20,7 +20,10 @@ const app = express();
 app.engine('handlebars', exphbs({ defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
-app.get('/', (req, res) => res.send('INDEX'));
+// //Static Folder
+app.use(express.static(path.join(__dirname, 'public')));
+//Index route
+app.get('/', (req, res) => res.render('index',{ layout: 'landing'}));
 
 //Gig Routes
 app.use('/gigs', require('./routes/gigs'));
