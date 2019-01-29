@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({ extended: false}));
 // //Static Folder
 app.use(express.static(path.join(__dirname, 'public')));
 //Index route
-app.get('/', (req, res) => res.render('index',{ layout: 'landing'}));
+app.get('/', (req, res) => res.render('index',{ layout: 'landing' }));
 
 //Gig Routes
 app.use('/gigs', require('./routes/gigs'));
