@@ -15,7 +15,8 @@ body {
   font-family: 'Lato', sans-serif;
   margin: 0;
   color: #333;
-  background: #f4f4f4;
+  background: url('../img/Coding.jpeg') no-repeat center center fixed / cover;
+  
 }
 
 ul {
@@ -119,6 +120,9 @@ header.inner {
   color: #fff;
   margin: 0 0 1.5rem;
   text-align: center;
+}
+.search-wrap p {
+  color: #fff;
 }
 
 .search-form input[type='submit'] {

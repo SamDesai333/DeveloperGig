@@ -1,7 +1,6 @@
 <section id="add" class="container">
     <div class="form-wrap">
-      <h1>Add A Gig</h1>
-      <p>Your contact email will be shared with registered users to apply to your gig</p>
+      <h1>Add A Job </h1>
       {{#each errors}}
         <div class="error">
           <p>{{text}}</p>
@@ -9,7 +8,7 @@
       {{/each}}
       <form action="/gigs/add" method="POST">
         <div class="input-group">
-          <label for="title">Gig Title</label>
+          <label for="title">Job Title</label>
           <input type="text" name="title" id="title" class="input-box" placeholder="eg. Small Wordpress website, React developer"
             maxlength="100" value={{title}}>
         </div>
