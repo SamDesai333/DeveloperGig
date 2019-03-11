@@ -1,7 +1,7 @@
 # DeveloperGig
 
-DeveloperGig is a personal web app to track the jobs I have applied to. I can add in the Job Title, Salary Offered, Job Description, and a Contact Email for 
-the company or recruiter. There is also a search functionality built in to search applied to jobs by keywords.
+DeveloperGig is a personal web app to track the jobs I have applied to. I can add in the Job Title, Salary Offered, Job Description, and a Contact Email for the company or recruiter. There is also a search functionality built in to search applied to jobs by keywords.
+https://developer-gig.herokuapp.com/
 
 # Built With
 
